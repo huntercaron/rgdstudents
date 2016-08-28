@@ -1,0 +1,35 @@
+<div class="modular-row features {{ page.header.class}}">
+    {{ content }}
+    <div class="feature-items">
+    {% for card in page.header.cards %}
+           <div class="feature">
+            {% if card.header %}
+            <h4>{{ card.header }}</h4>
+            {% endif %}
+
+            {% if card.paragraph %}
+            <p class="">{{ card.paragraph }}</p>
+            <div class="feature-content">
+            {% else %}
+            <div class="feature-content">
+            {% endif %}
+
+
+            {% if card.link1 %}
+            <a>{{ card.link1 }}</a>
+            {% endif %}
+            {% if card.link2 %}
+            <a>{{ card.link2 }}</a>
+            {% endif %}
+            {% if card.link3 %}
+            <a>{{ card.link3 }}</a>
+            {% endif %}
+            {% if card.link4 %}
+            <a>{{ card.link4 }}</a>
+            {% endif %}
+            
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
