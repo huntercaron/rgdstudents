@@ -3,6 +3,7 @@
 {% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
 {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
+{#
 {% block javascripts %}
     {% if show_onpage_menu %}
         {% do assets.add('theme://js/singlePageNav.min.js') %}
@@ -29,10 +30,11 @@
 {% block header_navigation %}
     {% if show_onpage_menu %}
         <ul class="navigation">
-        {% for module in page.collection() %}
+         {% for module in page.collection() %}
             {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
             <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
         {% endfor %}
+
         {% for mitem in site.menu %}
             <li>
                 <a href="{{ mitem.url }}">
@@ -46,6 +48,7 @@
         {{  parent() }}
     {% endif %}
 {% endblock %}
+#}
 
 {% block content %}
     {{ page.content }}

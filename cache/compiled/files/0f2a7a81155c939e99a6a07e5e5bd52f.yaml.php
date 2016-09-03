@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://admin/admin.yaml',
-    'modified' => 1471713811,
+    'modified' => 1472510142,
     'data' => [
         'enabled' => true,
-        'route' => '/admin',
+        'route' => '/mybackdoor',
         'theme' => 'grav',
         'logo_text' => '',
         'body_classes' => '',
@@ -21,7 +21,7 @@ return [
             'dashboard-maintenance' => true,
             'dashboard-statistics' => true,
             'dashboard-notifications' => true,
-            'dashboard-feed' => true,
+            'dashboard-feed' => false,
             'dashboard-pages' => true
         ],
         'session' => [

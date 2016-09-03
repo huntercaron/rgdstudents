@@ -1,7 +1,6 @@
-title: Grav
+title: RGD Students
 author:
-  name: Joe Bloggs
+  name: Hunter Caron
   email: 'joe@test.com'
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
+    description: 'RGD students is the hub for all things RGD and students'

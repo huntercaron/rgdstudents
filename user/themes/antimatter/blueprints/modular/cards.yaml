@@ -17,7 +17,7 @@ form:
               fields:
                 .header:
                   type: text
-                  label: Header
+                  label: BrianRox
                 .paragraph:
                   type: text
                   label: Paragraph
